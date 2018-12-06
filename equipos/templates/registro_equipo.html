@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block titulo %}
+    Registro equipo
+{% endblock %}
+
+{% block contenido %}
+    <h1>{{ accion }} Equipo</h1>
+    <form action="" method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ registro_equipo.as_p }}
+        <button type="submit" class="btn btn-success">Guardar</button>
+        <a href="{% url 'equipos' %}" class="btn btn-danger">Cancelar</a>
+    </form>
+{% endblock %}
+
+{% block scripts %}
+
+{% endblock %}   
+         

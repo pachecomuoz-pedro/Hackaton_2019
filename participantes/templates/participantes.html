@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block titulo %}
+    Participantes
+{% endblock %}
+
+{% block contenido %}
+
+
+<center>
+	{%if request.user.is_staff%}
+		<h1>¡Bienvenio Administrador!</h1>
+	{%else%}
+		<h1>¡Bienvenio hackatonero!</h1>
+	{% endif %}
+<br>	
+<img src="{% static 'assets/images/foto20.jpg' %}" height="400" width="700">
+<br>
+<h3>¿Qué es un hackatón? <br>
+Un Hackatón es una actividad donde se reúnen especialistas de diferentes disciplinas, con conocimientos complementarios para ayudar a emprendedores a desarrollar una solución a un problema en concreto durante un fin de semana. Tendremos 5 Verticales. 
+El evento incluye: Alimentos, talleres, conferencias, bebidas, snacks, internet, mentorias, camping y regaderas. ¡Más de $200,000.00 pesos en premios!. ¡No te pierdas la oportunidad de desarrollar ideas y adentrate al mundo emprendedor!</h3>
+</center>
+
+
+
+{% endblock %}
+
+{% block scripts %}
+
+    
+{% endblock %}

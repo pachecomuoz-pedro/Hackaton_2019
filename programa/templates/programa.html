@@ -1,0 +1,431 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block titulo %}
+    Programa
+{% endblock %}
+
+{% block contenido %}
+
+
+<center>	
+    <center>
+      <h2 style="font-size:40px;">Calendario de actividades</h2>
+      </center>
+<section class="probootstrap_section">
+  <div class="row justify-content-center mb-5">
+    <div class="col-md-6 text-center mb-5 probootstrap-animate">
+    </div>
+  </div>
+  <div class="tabM">
+    <button class="tablinks" onclick="openCity(event, 'Viernes')">Viernes 28</button>
+    <button class="tablinks" onclick="openCity(event, 'Sabado')">Sábado 29</button>
+    <button class="tablinks" onclick="openCity(event, 'Domingo')">Domingo 30</button>
+  </div>
+
+  <!-- Tab content -->
+  <div class="table-responsive">
+    <div id="Viernes" class="tabcontentM" style="display: block; background-color: white;">
+      <div class="row justify-content-center mb-5">
+        <h4 style="text-align:center; padding-top: 2em;">Viernes 28</h4>
+        <table id="customers4M">
+          <tr>
+            <th style="text-align:center; width: 20%;">Horario</th>
+            <th style="text-align:center; width: 20%;">Zona de Trabajo</th>
+            <th style="text-align:center; width: 20%;">Zona de Mentorías</th>
+            <th style="text-align:center; width: 20%;">Zona de Workshops</th>
+            <th style="text-align:center; width: 20%;">Zona de Alimentos</th>
+          </tr>
+
+          <tr>
+            <td style="text-align:center;" bgcolor="a9ca7b">8:00</td>
+            <td style="text-align:center;" rowspan="2" bgcolor="c32a7f">Registro y entrega de acreditaciones</td>
+            <td style="text-align:center;" rowspan="2"></td>
+            <td style="text-align:center;" rowspan="2"></td>
+            <td style="text-align:center;" rowspan="2"></td>
+          </tr>
+
+          <tr>
+            <td style="text-align:center;" bgcolor="a9ca7b">10:00</td>
+          </tr>
+
+          <tr>
+            <td style="text-align:center;" bgcolor="a9ca7b">10:30</td>
+            <td style="text-align:center;" bgcolor="c11e4d">Bienvenida, Ceremonia de Inauguración  y reglas del juego del Hackaton Zacatecas</td>
+            <td style="text-align:center;"></td>
+            <td style="text-align:center;"></td>
+            <td style="text-align:center;"></td>
+          </tr>
+
+          <tr>
+            <td style="text-align:center;" bgcolor="a9ca7b">11:00</td>
+            <td style="text-align:center;" bgcolor="c32a7f">Conferencia "¿Se puede innovar en México?" por Marcus Dantus</td>
+            <td style="text-align:center;"></td>
+            <td style="text-align:center;"></td>
+            <td style="text-align:center;"></td>
+          </tr>
+
+          <tr>
+            <td style="text-align:center;" bgcolor="a9ca7b">12:00</td>
+            <td style="text-align:center;" bgcolor="c11e4d">Introducción de Verticales y Reglas</td>
+            <td style="text-align:center;" rowspan="2" bgcolor="19a9cb">Pitch de Idea o solución </td>
+            <td style="text-align:center;"></td>
+            <td style="text-align:center;"></td>
+          </tr>
+
+          <tr>
+            <td style="text-align:center;" bgcolor="a9ca7b">13:00</td>
+            <td style="text-align:center;" bgcolor="c32a7f">Conferencia "Las Apps se Actualizan, ¿Por qué el campo no?" por Adolfo Bonilla Gómez, Secretario del Campo de Zacatecas</td>
+            <td style="text-align:center;"></td>
+          </tr>
+
+          <tr>
+            <td style="text-align:center;" bgcolor="a9ca7b">14:00</td>
+            <td style="text-align:center;"></td>
+            <td style="text-align:center;" rowspan="2" bgcolor="3ac6f1">Mentoria entendimiento y comprensión del problema y su impacto </td>
+            <td style="text-align:center;"></td>
+            <td style="text-align:center;"></td>
+          </tr>
+
+          <tr>
+            <td style="text-align:center;" bgcolor="a9ca7b">15:00</td>
+            <td style="text-align:center;"></td>
+            <td style="text-align:center;"></td>
+            <td style="text-align:center;"></td>
+          </tr>
+
+          <tr>
+            <td style="text-align:center;" bgcolor="a9ca7b">16:00</td>
+            <td style="text-align:center;"></td>
+            <td style="text-align:center;"></td>
+            <td style="text-align:center;" rowspan="2" bgcolor="149847">Workshop "Base de Datos en Tiempo real con Firebase o Firestore" por Hector Tafoya de Wesay</td>
+
+            <td style="text-align:center;" rowspan="2" bgcolor="f79521">Comida</td>
+          </tr>
+
+          <tr>
+            <td style="text-align:center;" bgcolor="a9ca7b">17:00</td>
+            <td style="text-align:center;" bgcolor="c11e4d">Confencia "El enigma de la comercialización del turismo en el futuro ¿Puedes Millennial y Centennial? O ¿Le pregunto a tu papá X?" por Eduardo Yarto Aponte, Secretario de Turimo</td>
+            <td style="text-align:center;"></td>
+          </tr>
+
+          <tr>
+            <td style="text-align:center;" bgcolor="a9ca7b">18:00</td>
+            <td style="text-align:center;" bgcolor="c32a7f">Conferencia "Lo más difícil del software no es programa" por Alan Márquez de Lienzo</td>
+            <td style="text-align:center;" rowspan="2" bgcolor="3ac6f1">Mentoria idea de solución y visualizacion del MV</td>
+            <td style="text-align:center;" rowspan="2" bgcolor="7bc143">Workshop "Realidad Aumentada" por Miguel Ángel Marín de Lumynem Creative Studio</td>
+            <td style="text-align:center;" rowspan="2"></td>
+          </tr>
+
+          <tr>
+            <td style="text-align:center;" bgcolor="a9ca7b">19:00</td>
+            <td style="text-align:center;"></td>
+          </tr>
+
+          <tr>
+            <td style="text-align:center;" bgcolor="a9ca7b">20:00</td>
+            <td style="text-align:center;" rowspan="2"></td>
+            <td style="text-align:center;"></td>
+            <td style="text-align:center;" rowspan="2" bgcolor="149847">Workshop "Hacks para Hackatones" por Alberto Bustillos de VerneLabs</td>
+            <td style="text-align:center;" rowspan="2"></td>
+          </tr>
+
+          <tr>
+            <td style="text-align:center;" bgcolor="a9ca7b">21:00</td>
+            <td style="text-align:center;" rowspan="2" bgcolor="19a9cb">Mentoria de creación y desarrollo de MVP</td>
+          </tr>
+
+          <tr>
+            <td style="text-align:center;" bgcolor="a9ca7b">22:00</td>
+            <td style="text-align:center;" rowspan="3" bgcolor="c11e4d">DJ</td>
+            <td style="text-align:center;"></td>
+            <td style="text-align:center;"></td>
+          </tr>
+
+          <tr>
+            <td style="text-align:center;" bgcolor="a9ca7b">23:00</td>
+            <td style="text-align:center;"></td>
+            <td style="text-align:center;"></td>
+            <td style="text-align:center;"></td>
+          </tr>
+
+          <tr>
+            <td style="text-align:center;" bgcolor="a9ca7b">00:00</td>
+            <td style="text-align:center;"></td>
+            <td style="text-align:center;"></td>
+            <td style="text-align:center;"></td>
+          </tr>
+
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="table-responsive">
+    <div id="Sabado" class="tabcontentM" style="background-color: white;">
+      <div class="row justify-content-center mb-5">
+        <h4 style="text-align:center; padding-top: 2em;">Sábado 29</h4>
+        <table id="customers2M">
+          <tr>
+            <th style="text-align:center; width: 20%;">Horario</th>
+            <th style="text-align:center; width: 20%;">Zona de Trabajo</th>
+            <th style="text-align:center; width: 20%;">Zona de Mentorías</th>
+            <th style="text-align:center; width: 20%;">Zona de Workshops</th>
+            <th style="text-align:center; width: 20%;">Zona de Alimentos</th>
+          </tr>
+
+          <tr>
+            <td style="text-align:center;" bgcolor="e883bd">8:00</td>
+            <td style="text-align:center;"></td>
+            <td style="text-align:center;"></td>
+            <td style="text-align:center;"></td>
+            <td style="text-align:center;"></td>
+          </tr>
+
+          <tr>
+            <td style="text-align:center;" bgcolor="e883bd">9:00</td>
+            <td style="text-align:center;"></td>
+            <td style="text-align:center;"></td>
+            <td style="text-align:center;" rowspan="2" bgcolor="7bc143">Workshop "Fast Prototype" por Iddar Olivares de Dbug.mx</td>
+            <td style="text-align:center;" rowspan="2" bgcolor="f79521">Desayuno</td>
+          </tr>
+
+          <tr>
+            <td style="text-align:center;" bgcolor="e883bd">10:00</td>
+            <td style="text-align:center;" bgcolor="c11e4d">Conferencia Innovando desde la raíz
+              Impartida por Alfonso Salcedo
+              de Networking University</td>
+              <td style="text-align:center;" rowspan="2" bgcolor="19a9cb">Mentoria de Implementación del MVP</td>
+            </tr>
+
+            <tr>
+              <td style="text-align:center;" bgcolor="e883bd">11:00</td>
+              <td style="text-align:center;" bgcolor="c32a7f">Conferencias “Peñoles, hacia la Minería
+                Inteligente” por MIA Aurelio
+                Trejo Lopez de Industrias Peñoles</td>
+                <td style="text-align:center;" rowspan="3" bgcolor="149847">Workshop "IoT: Redes Inalambricas LPWAN" por Fernando Ramírez Cossío de Orion Startups</td>
+                <td style="text-align:center;"></td>
+                <td style="text-align:center;"></td>
+                <tr>
+
+                  <tr>
+                    <td style="text-align:center;" bgcolor="e883bd">12:00</td>
+                    <td style="text-align:center;" bgcolor="c11e4d">Conferencias "Agricultura 4.0 y de precisión, estrategia  de gobierno para fortalecer el campo zacatecano" por Francisco Gamboa de SECAMPO</td>
+                    <td style="text-align:center;"></td>
+                    <td style="text-align:center;"></td>
+                  </tr>
+
+                  <tr>
+                    <td style="text-align:center;" bgcolor="e883bd">13:00</td>
+                    <td style="text-align:center;" bgcolor="c32a7f">Conferencias "Marketing Experiencial esa es base para los emprendedores" por Nancy Gallegos de Woman Lab</td>
+                    <td style="text-align:center;"></td>
+                    <td style="text-align:center;" rowspan="2" bgcolor="7bc143">Workshop "User Experience, UX" por José David Piña Wong de Medikaway</td>
+                    <td style="text-align:center;"></td>
+                  </tr>
+
+                  <tr>
+                    <td style="text-align:center;" bgcolor="e883bd">14:00</td>
+                    <td style="text-align:center;"></td>
+                    <td style="text-align:center;"></td>
+                    <td style="text-align:center;"></td>
+                  </tr>
+
+                  <tr>
+                    <td style="text-align:center;" bgcolor="e883bd">15:00</td>
+                    <td style="text-align:center;" bgcolor="c11e4d">Mentoria de usabilidad</td>
+                    <td style="text-align:center;" bgcolor="3ac6f1">Mentoria de usabilidad</td>
+                    <td style="text-align:center;" rowspan="2" bgcolor="149847">Workshop "Branding y
+                      Marketing para
+                      emprendedores y
+                      empresarios" por Adán
+                      Avelar de Talent Network
+                    </td>
+                    <td style="text-align:center;"></td>
+                  </tr>
+
+                  <tr>
+                    <td style="text-align:center;" bgcolor="e883bd">16:00</td>
+                    <td style="text-align:center;"></td>
+                    <td style="text-align:center;"></td>
+                    <td style="text-align:center;" rowspan="2" bgcolor="f79521">Comida</td>
+                  </tr>
+
+                  <tr>
+                    <td style="text-align:center;" bgcolor="e883bd">17:00</td>
+                    <td style="text-align:center;" bgcolor="c32a7f">Workshop "Taller Práctico de Machine Learning " por Héctor Cuesta de Dataxios</td>
+                    <td style="text-align:center;"></td>
+                    <td style="text-align:center;" rowspan="2" bgcolor="7bc143">Workshop "Taller
+                      Práctico de Machine
+                      Learning" por Héctor
+                      Cuesta de Dataxios</td>
+                    </tr>
+
+                    <tr>
+                      <td style="text-align:center;" bgcolor="e883bd">18:00</td>
+                      <td style="text-align:center;"></td>
+                      <td style="text-align:center;"></td>
+                    </tr>
+
+                    <tr>
+                      <td style="text-align:center;" bgcolor="e883bd">19:00</td>
+                      <td style="text-align:center;"></td>
+                      <td style="text-align:center;"></td>
+                      <td style="text-align:center;" rowspan="2" bgcolor="149847">Workshop "Growth Hacking: como crecer tu negocio sin dinero" por Arturo Medina Hernández de Visoor </td>
+                      <td style="text-align:center;"></td>
+                    </tr>
+
+                    <tr>
+                      <td style="text-align:center;" bgcolor="e883bd">20:00</td>
+                      <td style="text-align:center;" bgcolor="c11e4d">Charla "Como presentar tu proyecto"</td>
+                      <td style="text-align:center;"></td>
+                      <td style="text-align:center;"></td>
+                    </tr>
+
+                    <tr>
+                      <td style="text-align:center;" bgcolor="e883bd">21:00</td>
+                      <td style="text-align:center;"></td>
+                      <td style="text-align:center;" bgcolor="19a9cb">Mentoria de Pitch</td>
+                      <td style="text-align:center;" rowspan="3"></td>
+                      <td style="text-align:center;" rowspan="3"></td>
+                    </tr>
+
+                    <tr>
+                      <td style="text-align:center;" bgcolor="e883bd">22:00</td>
+                      <td style="text-align:center;" bgcolor="c32a7f">Mentoria de Pitch</td>
+                      <td style="text-align:center;"></td>
+                    </tr>
+
+                    <tr>
+                      <td style="text-align:center;" bgcolor="e883bd">23:00</td>
+                      <td style="text-align:center;" rowspan="2" bgcolor="c11e4d">DJ</td>
+                      <td style="text-align:center;"></td>
+                    </tr>
+
+                    <tr>
+                      <td style="text-align:center;" bgcolor="e883bd">00:00</td>
+                      <td style="text-align:center;"></td>
+                      <td style="text-align:center;"></td>
+                      <td style="text-align:center;"></td>
+                    </tr>
+
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="table-responsive">
+            <div id="Domingo" class="tabcontentM" style="background-color: white;">
+              <div class="row justify-content-center mb-5">
+                <h4 style="text-align:center; padding-top: 2em;">Domingo 30</h4>
+                <table id="customers3M">
+                  <tr>
+                    <th style="text-align:center; width: 20%;">Horario</th>
+                    <th style="text-align:center; width: 20%;">Zona de Trabajo</th>
+                    <th style="text-align:center; width: 20%;">Zona de Mentorías</th>
+                    <th style="text-align:center; width: 20%;">Zona de Workshops</th>
+                    <th style="text-align:center; width: 20%;">Zona de Alimentos</th>
+                  </tr>
+
+                  <tr>
+                    <td style="text-align:center;" bgcolor="c7e3e4">8:00</td>
+                    <td style="text-align:center;"></td>
+                    <td style="text-align:center;"></td>
+                    <td style="text-align:center;"></td>
+                    <td style="text-align:center;"></td>
+                  </tr>
+
+                  <tr>
+                    <td style="text-align:center;" bgcolor="c7e3e4">9:00</td>
+                    <td style="text-align:center;" bgcolor="c32a7f">Conferencia Desafíos de la
+                      Responsabilidad Social Corporativa
+                      en el Impulso del Desarrollo Económico
+                      y Social impartida por María Isabel Mtz.
+                      de GoldCorp</td>
+                      <td style="text-align:center;"></td>
+                      <td style="text-align:center;"></td>
+                      <td style="text-align:center;" rowspan="2" bgcolor="f79521">Desayuno</td>
+                    </tr>
+
+                    <tr>
+                      <td style="text-align:center;" bgcolor="c7e3e4">10:00</td>
+                      <td style="text-align:center;" bgcolor="c11e4d">Máquinas inteligentes en la industria y minería por Julio Valles de Komatsu</td>
+                      <td style="text-align:center;" bgcolor="19a9cb">Semifinal de verticales</td>
+                      <td style="text-align:center;" rowspan="2" bgcolor="7bc143">Workshop "Como Convencer Inversionistas" por Matevz Gantar de ArkAngels.co</td>
+                    </tr>
+
+                    <tr>
+                      <td style="text-align:center;" bgcolor="c7e3e4">11:00</td>
+                      <td style="text-align:center;" bgcolor="c32a7f">Semifinal de verticales</td>
+                      <td style="text-align:center;" rowspan="2" bgcolor="3ac6f1">Mentoria de Pitch</td>
+                      <td style="text-align:center;"></td>
+                    </tr>
+
+                    <tr>
+                      <td style="text-align:center;" bgcolor="c7e3e4">12:00</td>
+                      <td style="text-align:center;"></td>
+                      <td style="text-align:center;" rowspan="2" bgcolor="149847">Workshop "Bussines Model Canvas & Pitches" por Sebastián Hernández Gutiérrez de Orion Startups</td>
+                      <td style="text-align:center;"></td>
+                      <td style="text-align:center;"></td>
+                    </tr>
+
+                    <tr>
+                      <td style="text-align:center;" bgcolor="c7e3e4">13:00</td>
+                      <td style="text-align:center;" bgcolor="c11e4d">Final Vertical 1 - Indusrtria</td>
+                      <td style="text-align:center;"></td>
+                      <td style="text-align:center;" rowspan="2" bgcolor="f79521">Comida</td>
+                    </tr>
+
+                    <tr>
+                      <td style="text-align:center;" bgcolor="c7e3e4">14:00</td>
+                      <td style="text-align:center;" bgcolor="c32a7f">Final Vertical 2 - Agroindustria</td>
+                      <td style="text-align:center;" bgcolor="19a9cb">Final Vertical 3 - Smart City</td>
+                      <td style="text-align:center;" rowspan="2" bgcolor="7bc143">Workshop "Como hacer que tu Startup despegue" por Arturo Medina Hernández de Visoor</td>
+                    </tr>
+
+                    <tr>
+                      <td style="text-align:center;" bgcolor="c7e3e4">15:00</td>
+                      <td style="text-align:center;" bgcolor="c11e4d">Final Vertical 4 - Minería</td>
+                      <td style="text-align:center;" bgcolor="3ac6f1">Final Vertical 5 - Energias Renovables</td>
+                      <td style="text-align:center;"></td>
+                    </tr>
+
+                    <tr>
+                      <td style="text-align:center;" bgcolor="c7e3e4">16:00</td>
+                      <td style="text-align:center;" bgcolor="c32a7f">Pitch Final</td>
+                      <td style="text-align:center;"></td>
+                      <td style="text-align:center;"></td>
+                      <td style="text-align:center;"></td>
+                    </tr>
+
+                    <tr>
+                      <td style="text-align:center;" bgcolor="c7e3e4">17:00</td>
+                      <td style="text-align:center;" bgcolor="c11e4d">Premiación y Clausura</td>
+                      <td style="text-align:center;"></td>
+                      <td style="text-align:center;"></td>
+                      <td style="text-align:center;"></td>
+                    </tr>
+
+                  </table>
+                </div>
+              </div>
+
+              <div class="jumbotron jumbotron-fluid bg-white">
+                <div class="container">
+                  <h1 class="display-4">Psst...</h1>
+                  <p class="lead">Descarga el programa en tu móvil para que puedas checar rápidamente el programa de los Workshops y actividades del evento de Hackatón 2018!!.</p>
+                  <a class="btn btn-primary mr-0 mb-3 mr-2" href="{% static 'assets/Doc/Programa Hackatón.pdf' %}" target="_blank" download="Programa Hackatón.pdf">Descargar programa</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+</center>
+
+{% endblock %}
+
+{% block scripts %}
+
+<link rel="stylesheet" href="{% static 'assets/css/estilosTab.css' %}">
+    
+{% endblock %}

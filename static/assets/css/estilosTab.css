@@ -1,0 +1,131 @@
+/* Style the tab */
+.tabM {
+    overflow: hidden;
+    background-color: #4c7529d4;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tabM button {
+    background-color: #4c752908;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 20px 25px;
+    transition: 0.3s;
+    color: white;
+    border: white;
+}
+
+/* Change background color of buttons on hover */
+.tabM button:hover {
+    background-color: white;
+    color: #111;
+}
+
+/* Create an active/current "tab button" class */
+.tabM button.active {
+    background-color: white;
+    color: #111;
+}
+
+/* Style the tab content */
+.tabcontentM {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+}
+
+
+
+#customers1M {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#customers1M td, #customers1M th {
+    border: none;
+    color: white;
+    font-size: 17px;
+    padding: 8px;
+}
+
+#customers1M th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #8fc640;
+    color: white;
+}
+
+
+
+
+#customers2M {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#customers2M td, #customers1 th {
+    border: none;
+    color: white;
+    font-size: 17px;
+    padding: 8px;
+}
+
+
+#customers2M th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #eb0d8c;
+    color: white;
+}
+
+
+
+#customers3M {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#customers3M td, #customers1 th {
+    border: none;
+    color: white;
+    font-size: 17px;
+    padding: 8px;
+}
+
+
+#customers3M th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #59bcbe;
+    color: white;
+}
+
+
+#customers4M {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#customers4M td, #customers1 th {
+    border: none;
+    color: white;
+    font-size: 17px;
+    padding: 8px;
+}
+
+#customers4M th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #8fc640;
+    color: white;
+}

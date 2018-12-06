@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block titulo %}
+    Mapa del evento
+{% endblock %}
+
+{% block contenido %}
+
+
+<center>
+	<h1>Ubicación del Evento</h1>
+	
+    <br>    
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3678.619795512071!2d-102.61308058545929!3d22.779486985076623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86824e063ac8d4c5%3A0xe3338e15a70b2688!2sPalacio+de+Convenciones+Zacatecas!5e0!3m2!1ses-419!2smx!4v1534529520123"  height= "500px" frameborder="0" style="display: block; margin-left: auto; margin-right: auto; width: 100% !important; " allowfullscreen  ></iframe>
+    <br>
+</center>
+
+<br>
+
+<center>
+	<h1>Mapa del Lugar</h1>
+	<br>
+      <img src="{% static 'assets/images/plano.png' %}" alt="Generic placeholder image" style=" display: block; margin-left: auto; margin-right: auto; width: 70% !important;">
+    <br>
+</center>
+
+{% endblock %}
+
+{% block scripts %}
+    
+{% endblock %}

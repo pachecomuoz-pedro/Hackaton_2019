@@ -1,0 +1,89 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block titulo %}
+    Jueces
+{% endblock %}
+
+{% block contenido %}
+
+
+<center>
+	<h1>Jueces del Hackatón</h1>
+	
+	<p class="lead mb-5  probootstrap-animate">Conoce a los jueces que evaluarán el proyecto ganador durante el hackatón</p>
+
+    <div class="col-md-4 col-xs-12 widget widget_tally_box">
+        <div class="x_panel fixed_height_500">
+            <div class="x_content">
+				<div class="flex">
+                    <ul class="list-inline widget_profile_box">
+                        <li></li>
+                        <li>
+                            <img src="{% static 'assets/images/jueces/Julio_Valles.jpg' %}" alt="..." class="img-circle profile_img">
+                        </li>
+                        <li></li>
+                    </ul>
+                </div>
+
+            <h3 class="name">Julio César Valles Monarrez</h3>
+
+                <p>
+                    Ingeniero Mecatrónico por el Tec de Monterrey Campus Chihuahua. Con cinco años de experiencia en la industria minera, recorriendo el camino de técnico a analista. Actualmente desarrollando proyectos de ingeniería de aplicación en Komatsu México, en donde se traducen las necesidades de importantes clientes mineros a nivel nacional e internacional a soluciones integrales de maquinaria.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 col-xs-12 widget widget_tally_box">
+        <div class="x_panel fixed_height_500">
+            <div class="x_content">
+				<div class="flex">
+                    <ul class="list-inline widget_profile_box">
+                        <li></li>
+                        <li>
+                            <img src="{% static 'assets/images/jueces/Laura Ruiz.jpg' %}" alt="..." class="img-circle profile_img">
+                        </li>
+                        <li></li>
+                    </ul>
+                </div>
+
+            <h3 class="name">Laura Shela Ruiz Eguia</h3>
+
+                <p>
+                    Especialista en la aplicación de los conocimientos de administración y marketing al desarrollo de ideas de negocio, se ha dedicado a compartir su experiencia a través de la docencia desde hace 13 años. Le gustan los temas estratégicos, el desarrollo de identidad e imagen corporativa para hacer match con el mercado y las ventas.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 col-xs-12 widget widget_tally_box">
+        <div class="x_panel fixed_height_500">
+            <div class="x_content">
+				<div class="flex">
+                    <ul class="list-inline widget_profile_box">
+                        <li></li>
+                        <li>
+                            <img src="{% static 'assets/images/jueces/M_pina_w.jpg' %}" alt="..." class="img-circle profile_img">
+                        </li>
+                        <li></li>
+                    </ul>
+                </div>
+
+            <h3 class="name">José David Piña Wong</h3>
+
+                <p>
+                    En los últimos 6 años ha dirigido equipos de desarrollo y diseño en agencias de publicidad, trabajo para marcas como Walmart, KFC, KLM / Air France, Honda, Santander, LALA, Mercedes-Benz, Televisa, Boston Scientific, Grupo Profuturo, Liverpool, etc. Participando en proyectos que han obtenido premios Effie y otros reconocimientos. Actualmente dirije el proyecto Medikaway donde estan desarrollando herramientas digitales para llevar a otro nivel las consultas médicas.
+                </p>
+            </div>
+        </div>
+    </div>
+
+</center>
+
+
+{% endblock %}
+
+{% block scripts %}
+
+    
+{% endblock %}
